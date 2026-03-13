@@ -50,6 +50,12 @@ app.use(errorHandler);
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`🚀 GlobalPay API running on http://localhost:${PORT}`);
-  console.log(`📚 Health check: http://localhost:${PORT}/health`);
+  console.log('\n════════════════════════════════════════════════════════');
+  console.log('🌍 GLOBALPAY - P2P MONEY TRANSFER PLATFORM');
+  console.log('════════════════════════════════════════════════════════');
+  console.log(`\n✅ Backend API: http://localhost:${PORT}`);
+  console.log(`✅ Frontend UI: http://localhost:5173`);
+  console.log(`\n📚 API Health: http://localhost:${PORT}/health`);
+  console.log(`📚 API Docs: ${PORT}/api/docs`);
+  console.log('\n════════════════════════════════════════════════════════\n');
 });
